@@ -3,11 +3,11 @@ import matplotlib.pyplot as plt
 import tensorflow as tf
 
 from tensorflow import keras
-from tensorflow import layers
-from tensorflow import Sequential
+from tensorflow.keras import layers
+from tensorflow.keras.models import Sequential
 
 # creating dataset:
-batch_size = 64
+batch_size = 32
 img_height = 180
 img_width = 180
 
