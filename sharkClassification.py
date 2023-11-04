@@ -27,6 +27,8 @@ val_ds = tf.keras.utils.image_dataset_from_directory(
     image_size=(img_height, img_width),
     batch_size=batch_size)
 
+sharkNames = train_ds.class_names
+
 # visualize data:
 plt.figure(figsize=(10, 10))
 for images, labels in train_ds.take(1):
@@ -36,3 +38,43 @@ for images, labels in train_ds.take(1):
         plt.title(int(labels[i]))
         plt.axis("off")
 
+# augment data:
+data_augmentation = keras.Sequential(
+    [
+        layers.RandomFlip("horizontal"),
+        layers.RandomRotation(0.1),
+        layers.RandomZoom(0.1),
+    ]
+)
+
+# standardize data:
+normalization_layer = layers.Rescaling(1./255)
+
+# create model:
+num_classes = len(sharkNames)
+
+model = Sequential([
+  layers.Rescaling(1./255, input_shape=(img_height, img_width, 3)),
+  layers.Conv2D(16, 3, padding='same', activation='relu'),
+  layers.MaxPooling2D(),
+  layers.Conv2D(32, 3, padding='same', activation='relu'),
+  layers.MaxPooling2D(),
+  layers.Conv2D(64, 3, padding='same', activation='relu'),
+  layers.MaxPooling2D(),
+  layers.Flatten(),
+  layers.Dense(128, activation='relu'),
+  layers.Dense(num_classes)
+])
+
+model.compile(optimizer='adam',
+    loss=tf.keras.losses.SparseCategoricalCrossentropy(from_logits=True),
+    metrics=['accuracy'])
+
+# train model:
+epochs = 25
+
+history = model.fit(
+  train_ds,
+  validation_data=val_ds,
+  epochs=epochs
+)
