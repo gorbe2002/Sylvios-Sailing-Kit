@@ -9,7 +9,8 @@
 ## :page_facing_up: Downloads
 
 ## :computer: Technology Used
-<ul>
-  <li>TensorFLow</li>
-  
+<ul >
+  <li>TensorFlow</li>
+  <li>Keras </li>
+  <li>MatPlotLib </li>  
 </ul>
