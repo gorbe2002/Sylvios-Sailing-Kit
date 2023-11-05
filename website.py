@@ -139,9 +139,10 @@ if (start_location == "Lisbon, Portugal" or end_location == "Lisbon, Portugal"):
 if (start_location == "Algeciras, Spain" or end_location == "Algeciras, Spain"):
     folium.Marker(location=algecirasLatLon, popup="Port of Algeciras", tooltip="Port of Algeciras").add_to(route_map)
 st_data = st_folium(route_map, width=700)
+st.divider()
 
 # display weather data:
-st.title(f"Relevant weather data in {start_location}:")
+st.title(f"Weather data in {start_location}:")
 st.write(f"Temperature: {tempFahrenheit:.2f}°F")
 st.write(f"Temperature feels like: {tempFeelsLikeFahrenheit:.2f}°F")
 st.write(f"Humidity: {humidity}%")
