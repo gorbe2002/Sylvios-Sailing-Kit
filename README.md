@@ -6,6 +6,7 @@
 </p>
 
 ## 📜 Table of Contents
+- [Inspiration 🧜‍♀️](https://github.com/gorbe2002/Sylvios-Sailing-Kit/edit/main/README.md#inspiration-%EF%B8%8F)
 - [❓ What We're Proud Of](https://github.com/gorbe2002/Sylvios-Sailing-Kit#accomplishments-that-were-proud-of)
 - [Challenges Faced😕](https://github.com/gorbe2002/Sylvios-Sailing-Kit#challenges-we-ran-into)
 - [💻 Technology Used](https://github.com/gorbe2002/Sylvios-Sailing-Kit#-%EF%B8%8F-technologies-used-%EF%B8%8F-)
