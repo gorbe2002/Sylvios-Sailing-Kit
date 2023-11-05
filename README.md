@@ -1,6 +1,16 @@
 <body background-color: white>
 <h1> Sylvio's Sailing Kit ⚓ 🔱⛵🚢 🌧</h1>
 
+## 📜 Table of Contents
+- [HackNJIT23 Members](https://github.com/gorbe2002/Sylvios-Sailing-Kit#--team-members-)
+- [❓ What We're Proud Od](https://github.com/gorbe2002/Sylvios-Sailing-Kit#accomplishments-that-were-proud-of)
+- [📄 Downloads](https://github.com/diaa-shalaby/HackUPC2023/blob/main/README.md#page_facing_up-downloads)
+- [💻 Technology Used](https://github.com/gorbe2002/Sylvios-Sailing-Kit#-%EF%B8%8F-technologies-used-%EF%B8%8F-)
+- [🎯 What/s Next for Sylvio's Sailing Kit?](https://github.com/gorbe2002/Sylvios-Sailing-Kit#whats-next-for-sylvios-sailing-kit---)
+
+
+
+
 ## Inspiration 🧜‍♀️
 We were inspired by the idea of a modern lonely sailor. We thought to ourselves "What would this sailor need to fulfill his navigation needs and thirst for a word puzzle."
 
