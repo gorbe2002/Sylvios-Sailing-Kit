@@ -1,5 +1,5 @@
 # HackNJIT2023
-<h1> Sylvio's Sailing Kit </h1>
+<h1> Sylvio's Sailing Kit ⚓ 🔱⛵🚢 </h1>
 
 
 <h2>❔ What Is Our Project? </h2>
