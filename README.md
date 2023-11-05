@@ -1,25 +1,25 @@
 <body background-color: white>
 <h1> Sylvio's Sailing Kit ⚓ 🔱⛵🚢 🌧</h1>
 
-## Inspiration
+## Inspiration 🧜‍♀️
 We were inspired by the idea of a modern lonely sailor. We thought to ourselves "What would this sailor need to fulfill his navigation needs and thirst for a word puzzle."
 
 ## What it does🚢 🌧
 Our project gathers real-time weather data to map out the most optimal path to get from one port to another.
 
-## How we built it
+## How we built it ❓
 The wordle-inspired "seaWorldLE" was built using PHP, CSS, a word bank, and HTML to blend the backend and front-end problems faced when making a game like Wordle.
 
-## Challenges we ran into
+## Challenges we ran into😕
 We ran into data collection issues at the start that made us rethink how we went about our project, additionally, in the mini-game seaWorldLE, we ran into issues with hosting a PHP website. 
 
-## Accomplishments that we're proud of
+## Accomplishments that we're proud of😁
 We're proud of the way we were able to recover from harsh setbacks in the beginning and rethink how we went about collecting our data to re-engineer our initial idea which was image classification of shark species as well as a predictive model that used data from buoy centers.
 
 ## What we learned
 Functionally we learned how to constantly reinvigorate our imaginations when faced with two major setbacks. On the more technical side, we learned a lot more about StreamLit, Python, and PHP as well as general web hosting. 
 
-## What's Next for Sylvio's Sailing Kit
+## What's Next for Sylvio's Sailing Kit ⚓ 🔱⛵🚢 🌧
 We want Sylvios's Sailing Kit to have increased utility with the addition of "tools" that would provide utility via computer vision, machine learning, time series analysis, etc. 
 
 <h2> 🖥️ Technologies Used 🖥️ </h2>
@@ -32,6 +32,7 @@ We want Sylvios's Sailing Kit to have increased utility with the addition of "to
   <li>CSS</li>
   <li>HTML</li>
   <li>Folium</li>
+  <li>Wordle Website (inspiration)</li>
   
 </ul>
 <h2>  Team Members </h2>
