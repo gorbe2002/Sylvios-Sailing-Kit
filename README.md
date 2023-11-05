@@ -5,19 +5,23 @@
 <h2 >📜 Table of Contents </h2>
 <ol>
   <li> <a href = "#whatIsOurProject"> What is Our Project? </a>  </li>
-  <li> <a href = "#technologies"> What is Our Project? </a>  </li>
+  <li> <a href = "#technologies"> Technologies </a>  </li>
   
-
 </ol>
 
 
 <h2 id = 'whatIsOurProject' >❔ What Is Our Project? </h2>
-<p> Our shark recognition model transforms photos of varying species of sharks and identifies them based on trained differences</p>
+<p> A nautically inspired wordle concentrated with a nautical travel utility</p>
 
 
 ##2
 <h2 id = 'technologes' > 🖥️ Technologies Used </h2>
 
 <ul>
-  <li>  </li>
+  <li> StreamLit</li>
+  <li> OpenWeatherMap's API</li>
+  <li>PHP  </li>
+  <li>CSS</li>
+  <li>HTML</li>
+  
 </ul>
