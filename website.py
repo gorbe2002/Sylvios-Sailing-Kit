@@ -29,13 +29,14 @@ def haversine_distance(lat1, lon1, lat2, lon2):
     return distance
 
 # title of website:
-st.title("Welcome to Sylvester Smart Sailing!")
+st.title("Welcome to Sylvio's Sailing Kit!")
 st.divider()
-start_location = st.selectbox('Select a starting port in one of the following locations', ["Newark, USA", "Rio de Janiero, Brazil", "Lisbon, Portugal", "Algeciras, Spain"])
+start_location = st.selectbox('Select a starting port in one of the following locations', ["Newark, USA", "Paramaribo, Suriname", "Lisbon, Portugal", "Algeciras, Spain"])
 
-# given ports latitudes and longitudes
+# given ports latitudes and longitudes [lat, lon]
 newarkLatLon = [40.685790, -74.162510]
-rioLatLon = [-22.898360, -43.180960]
+# rioLatLon = [-22.898360, -43.180960]
+paramariboLatLon = [5.811784, -55.169924]
 lisbonLatLon = [38.701191, -9.165530]
 algecirasLatLon = [36.126930, -5.443430]
 
@@ -50,15 +51,17 @@ if start_location == "Newark, USA":
     start_lat, start_lon = newarkLatLon[0], newarkLatLon[1]
     my_map = folium.Map(location=newarkLatLon, zoom_start=13)
     folium.Marker(location=newarkLatLon, popup="Port Newark Container Terminal", tooltip="Port Newark Container Terminal").add_to(my_map)
-    folium.Marker(location=[-22.898360, -43.180960], popup="Porto do Rio de Janiero", tooltip="Porto do Rio de Janiero").add_to(my_map)
+    # folium.Marker(location=[-22.898360, -43.180960], popup="Porto do Rio de Janiero", tooltip="Porto do Rio de Janiero").add_to(my_map)
+    folium.Marker(location=[5.811784, -55.169924], popup="Jules Sedney Harbour", tooltip="Jules Sedney Harbour").add_to(my_map)
     folium.Marker(location=[38.701191, -9.165530], popup="Port of Lisbon", tooltip="Port of Lisbon").add_to(my_map)
     folium.Marker(location=[36.126930, -5.443430], popup="Port of Algeciras", tooltip="Port of Algeciras").add_to(my_map)
     st_data = st_folium(my_map, width=700)
-elif start_location == "Rio de Janiero, Brazil":
-    start_lat, start_lon = rioLatLon[0], rioLatLon[1]
-    my_map = folium.Map(location=rioLatLon, zoom_start=15)
+elif start_location == "Paramaribo, Suriname":
+    start_lat, start_lon = paramariboLatLon[0], paramariboLatLon[1]
+    my_map = folium.Map(location=paramariboLatLon, zoom_start=15)
     folium.Marker(location=[40.685790, -74.162510], popup="Port Newark Container Terminal", tooltip="Port Newark Container Terminal").add_to(my_map)
-    folium.Marker(location=rioLatLon, popup="Porto do Rio de Janiero", tooltip="Porto do Rio de Janiero").add_to(my_map)
+    # folium.Marker(location=rioLatLon, popup="Porto do Rio de Janiero", tooltip="Porto do Rio de Janiero").add_to(my_map)
+    folium.Marker(location=paramariboLatLon, popup="Jules Sedney Harbour", tooltip="Jules Sedney Harbour").add_to(my_map)
     folium.Marker(location=[38.701191, -9.165530], popup="Port of Lisbon", tooltip="Port of Lisbon").add_to(my_map)
     folium.Marker(location=[36.126930, -5.443430], popup="Port of Algeciras", tooltip="Port of Algeciras").add_to(my_map)
     st_data = st_folium(my_map, width=700)
@@ -66,7 +69,8 @@ elif start_location == "Lisbon, Portugal":
     start_lat, start_lon = lisbonLatLon[0], lisbonLatLon[1]
     my_map = folium.Map(location=lisbonLatLon, zoom_start=15)
     folium.Marker(location=[40.685790, -74.162510], popup="Port Newark Container Terminal", tooltip="Port Newark Container Terminal").add_to(my_map)
-    folium.Marker(location=[-22.898360, -43.180960], popup="Porto do Rio de Janiero", tooltip="Porto do Rio de Janiero").add_to(my_map)
+    # folium.Marker(location=[-22.898360, -43.180960], popup="Porto do Rio de Janiero", tooltip="Porto do Rio de Janiero").add_to(my_map)
+    folium.Marker(location=[5.811784, -55.169924], popup="Jules Sedney Harbour", tooltip="Jules Sedney Harbour").add_to(my_map)
     folium.Marker(location=lisbonLatLon, popup="Port of Lisbon", tooltip="Port of Lisbon").add_to(my_map)
     folium.Marker(location=[36.126930, -5.443430], popup="Port of Algeciras", tooltip="Port of Algeciras").add_to(my_map)
     st_data = st_folium(my_map, width=700)
@@ -74,19 +78,20 @@ elif start_location == "Algeciras, Spain":
     start_lat, start_lon = algecirasLatLon[0], algecirasLatLon[1]
     my_map = folium.Map(location=algecirasLatLon, zoom_start=15)
     folium.Marker(location=[40.685790, -74.162510], popup="Port Newark Container Terminal", tooltip="Port Newark Container Terminal").add_to(my_map)
-    folium.Marker(location=[-22.898360, -43.180960], popup="Porto do Rio de Janiero", tooltip="Porto do Rio de Janiero").add_to(my_map)
+    # folium.Marker(location=[-22.898360, -43.180960], popup="Porto do Rio de Janiero", tooltip="Porto do Rio de Janiero").add_to(my_map)
+    folium.Marker(location=[5.811784, -55.169924], popup="Jules Sedney Harbour", tooltip="Jules Sedney Harbour").add_to(my_map)
     folium.Marker(location=[38.701191, -9.165530], popup="Port of Lisbon", tooltip="Port of Lisbon").add_to(my_map)
     folium.Marker(location=algecirasLatLon, popup="Port of Algeciras", tooltip="Port of Algeciras").add_to(my_map)
     st_data = st_folium(my_map, width=700)
 
 # ending location
-end_location = st.selectbox('Select an ending port in one of the following locations', ["Newark, USA", "Rio de Janiero, Brazil", "Lisbon, Portugal", "Algeciras, Spain"])
+end_location = st.selectbox('Select an ending port in one of the following locations', ["Newark, USA", "Paramaribo, Suriname", "Lisbon, Portugal", "Algeciras, Spain"])
 
 # getting latitude and longitude of end coordinates
 if end_location == "Newark, USA":
     end_lat, end_lon = newarkLatLon[0], newarkLatLon[1]
-elif end_location == "Rio de Janiero, Brazil":
-    end_lat, end_lon = rioLatLon[0], rioLatLon[1]
+elif end_location == "Paramaribo, Suriname":
+    end_lat, end_lon = paramariboLatLon[0], paramariboLatLon[1]
 elif end_location == "Lisbon, Portugal":
     end_lat, end_lon = lisbonLatLon[0], lisbonLatLon[1]
 elif end_location == "Algeciras, Spain":
@@ -95,7 +100,8 @@ elif end_location == "Algeciras, Spain":
 # get weather data based on the selected location:
 locationMapping = {
     "Newark, USA": "Newark", 
-    "Rio de Janiero, Brazil": "Rio",
+    # "Rio de Janiero, Brazil": "Rio",
+    "Paramaribo, Suriname": "Paramaribo",
     "Lisbon, Portugal": "Lisbon",
     "Algeciras, Spain": "Algeciras"
 }
@@ -124,11 +130,13 @@ route_line = folium.PolyLine(smooth_factor=50, locations=route_coordinates, colo
 route_line.add_to(route_map)
 if (start_location == "Newark, USA" or end_location == "Newark, USA"):
     folium.Marker(location=newarkLatLon, popup="Port Newark Container Terminal", tooltip="Port Newark Container Terminal").add_to(route_map)
-elif (start_location == "Rio de Janiero, Brazil" or end_location == "Rio de Janiero, Brazil"):
-    folium.Marker(location=rioLatLon, popup="Porto do Rio de Janiero", tooltip="Porto do Rio de Janiero").add_to(route_map)
-elif (start_location == "Lisbon, Portugal" or end_location == "Lisbon, Portugal"):
+# if (start_location == "Rio de Janiero, Brazil" or end_location == "Rio de Janiero, Brazil"):
+#     folium.Marker(location=rioLatLon, popup="Porto do Rio de Janiero", tooltip="Porto do Rio de Janiero").add_to(route_map)
+if (start_location == "Paramaribo, Suriname" or end_location == "Paramaribo, Suriname"):
+    folium.Marker(location=paramariboLatLon, popup="Jules Sedney Harbour", tooltip="Jules Sedney Harbour").add_to(route_map)
+if (start_location == "Lisbon, Portugal" or end_location == "Lisbon, Portugal"):
     folium.Marker(location=lisbonLatLon, popup="Port of Lisbon", tooltip="Port of Lisbon").add_to(route_map)
-elif (start_location == "Algeciras, Spain" or end_location == "Algeciras, Spain"):
+if (start_location == "Algeciras, Spain" or end_location == "Algeciras, Spain"):
     folium.Marker(location=algecirasLatLon, popup="Port of Algeciras", tooltip="Port of Algeciras").add_to(route_map)
 st_data = st_folium(route_map, width=700)
 

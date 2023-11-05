@@ -3,7 +3,7 @@ import requests
 
 BASE_URL = "https://api.openweathermap.org/data/2.5/weather?"
 API_KEY = open("key", 'r').read()
-CITY = "Algeciras"
+CITY = "Paramaribo"
 
 url = BASE_URL + "&appid=" + API_KEY + "&q=" + CITY
 
