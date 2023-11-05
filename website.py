@@ -116,11 +116,21 @@ distance = haversine_distance(start_lat, start_lon, end_lat, end_lon)
 st.subheader(f"Distance between {start_location} and {end_location} is {distance:.2f} km")
 st.divider()
 
-# highlight route on map
-if start_lat and start_lon and end_lat and end_lon:
-    route_coordinates = [(start_lat, start_lon), (end_lat, end_lon)]
-    route_line = folium.PolyLine(locations=route_coordinates, color='blue', weight=5, opacity=1)
-    route_line.add_to(my_map)
+# adding destination map with line between both points
+st.title("Destination map:")
+route_coordinates = [(start_lat, start_lon), (end_lat, end_lon)]
+route_map = folium.Map(location=[start_lat, start_lon], zoom_start=4)
+route_line = folium.PolyLine(smooth_factor=50, locations=route_coordinates, color='blue', weight=5, opacity=1, tooltip=f"From {start_location} to {end_location}")
+route_line.add_to(route_map)
+if (start_location == "Newark, USA" or end_location == "Newark, USA"):
+    folium.Marker(location=newarkLatLon, popup="Port Newark Container Terminal", tooltip="Port Newark Container Terminal").add_to(route_map)
+elif (start_location == "Rio de Janiero, Brazil" or end_location == "Rio de Janiero, Brazil"):
+    folium.Marker(location=rioLatLon, popup="Porto do Rio de Janiero", tooltip="Porto do Rio de Janiero").add_to(route_map)
+elif (start_location == "Lisbon, Portugal" or end_location == "Lisbon, Portugal"):
+    folium.Marker(location=lisbonLatLon, popup="Port of Lisbon", tooltip="Port of Lisbon").add_to(route_map)
+elif (start_location == "Algeciras, Spain" or end_location == "Algeciras, Spain"):
+    folium.Marker(location=algecirasLatLon, popup="Port of Algeciras", tooltip="Port of Algeciras").add_to(route_map)
+st_data = st_folium(route_map, width=700)
 
 # display weather data:
 st.title(f"Relevant weather data in {start_location}:")
