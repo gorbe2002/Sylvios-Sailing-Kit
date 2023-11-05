@@ -14,7 +14,7 @@ def get_weather_data(city):
 # title of website:
 st.title("Welcome to Sylvester Smart Sailing!")
 st.divider()
-location = st.selectbox('Select a port in one of the following locations', ["Newark, USA", "Rio de Janiero, Brazil", "Lisbon, Portugal"])
+location = st.selectbox('Select a port in one of the following locations', ["Newark, USA", "Rio de Janiero, Brazil", "Lisbon, Portugal", "Algeciras, Spain"])
 
 # change map depending on the location chosen:
 if location == "Newark, USA":
@@ -23,6 +23,7 @@ if location == "Newark, USA":
     folium.Marker(location=newarkLatLon, popup="Port Newark Container Terminal", tooltip="Port Newark Container Terminal").add_to(my_map)
     folium.Marker(location=[-22.898360, -43.180960], popup="Porto do Rio de Janiero", tooltip="Porto do Rio de Janiero").add_to(my_map)
     folium.Marker(location=[38.701191, -9.165530], popup="Port of Lisbon", tooltip="Port of Lisbon").add_to(my_map)
+    folium.Marker(location=[36.126930, -5.443430], popup="Port of Algeciras", tooltip="Port of Algeciras").add_to(my_map)
     st_data = st_folium(my_map, width=700)
 elif location == "Rio de Janiero, Brazil":
     rioLatLon = [-22.898360, -43.180960]
@@ -30,6 +31,7 @@ elif location == "Rio de Janiero, Brazil":
     folium.Marker(location=[40.685790, -74.162510], popup="Port Newark Container Terminal", tooltip="Port Newark Container Terminal").add_to(my_map)
     folium.Marker(location=rioLatLon, popup="Porto do Rio de Janiero", tooltip="Porto do Rio de Janiero").add_to(my_map)
     folium.Marker(location=[38.701191, -9.165530], popup="Port of Lisbon", tooltip="Port of Lisbon").add_to(my_map)
+    folium.Marker(location=[36.126930, -5.443430], popup="Port of Algeciras", tooltip="Port of Algeciras").add_to(my_map)
     st_data = st_folium(my_map, width=700)
 elif location == "Lisbon, Portugal":
     lisbonLatLon = [38.701191, -9.165530]
@@ -37,13 +39,23 @@ elif location == "Lisbon, Portugal":
     folium.Marker(location=[40.685790, -74.162510], popup="Port Newark Container Terminal", tooltip="Port Newark Container Terminal").add_to(my_map)
     folium.Marker(location=[-22.898360, -43.180960], popup="Porto do Rio de Janiero", tooltip="Porto do Rio de Janiero").add_to(my_map)
     folium.Marker(location=lisbonLatLon, popup="Port of Lisbon", tooltip="Port of Lisbon").add_to(my_map)
+    folium.Marker(location=[36.126930, -5.443430], popup="Port of Algeciras", tooltip="Port of Algeciras").add_to(my_map)
+    st_data = st_folium(my_map, width=700)
+elif location == "Algeciras, Spain":
+    andalusiaLatLon = [36.126930, -5.443430]
+    my_map = folium.Map(location=andalusiaLatLon, zoom_start=15)
+    folium.Marker(location=[40.685790, -74.162510], popup="Port Newark Container Terminal", tooltip="Port Newark Container Terminal").add_to(my_map)
+    folium.Marker(location=[-22.898360, -43.180960], popup="Porto do Rio de Janiero", tooltip="Porto do Rio de Janiero").add_to(my_map)
+    folium.Marker(location=[38.701191, -9.165530], popup="Port of Lisbon", tooltip="Port of Lisbon").add_to(my_map)
+    folium.Marker(location=andalusiaLatLon, popup="Port of Algeciras", tooltip="Port of Algeciras").add_to(my_map)
     st_data = st_folium(my_map, width=700)
 
 # get weather data based on the selected location:
 locationMapping = {
     "Newark, USA": "Newark", 
     "Rio de Janiero, Brazil": "Rio",
-    "Lisbon, Portugal": "Lisbon"
+    "Lisbon, Portugal": "Lisbon",
+    "Algeciras, Spain": "Algeciras"
 }
 selected_city = locationMapping[location]
 weather_data = get_weather_data(selected_city)
