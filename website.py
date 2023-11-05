@@ -1,33 +1,40 @@
 import folium
+import requests
 import streamlit as st
 from streamlit_folium import st_folium
 
 # title:
 st.title("Welcome to Sylvester Smart Sailing!")
-st.selectbox('Select a location', ["Newark", "Rio", "London"])
+st.divider()
+location = st.selectbox('Select a port in one of the following locations', ["Newark, USA", "Rio de Janiero, Brazil", "Lisbon, Portugal"])
 
-# map centered on NJIT:
-newarkLatLon = [40.7401, -74.1787]
-my_map = folium.Map(location=newarkLatLon, zoom_start=15)
-folium.Marker(location=newarkLatLon, popup="NJIT", tooltip="NJIT").add_to(my_map)
-folium.Marker(location=[40.7128, -74.0060], popup="New York City", tooltip="New York City").add_to(my_map)
-st_data = st_folium(my_map, width=700)
+# change map depending on the location chosen
+if location == "Newark, USA":
+    newarkLatLon = [40.685790, -74.162510]
+    my_map = folium.Map(location=newarkLatLon, zoom_start=13)
+    folium.Marker(location=newarkLatLon, popup="Port Newark Container Terminal", tooltip="Port Newark Container Terminal").add_to(my_map)
+    folium.Marker(location=[-22.898360, -43.180960], popup="Porto do Rio de Janiero", tooltip="Porto do Rio de Janiero").add_to(my_map)
+    folium.Marker(location=[38.701191, -9.165530], popup="Port of Lisbon", tooltip="Port of Lisbon").add_to(my_map)
+    st_data = st_folium(my_map, width=700)
+elif location == "Rio de Janiero, Brazil":
+    rioLatLon = [-22.898360, -43.180960]
+    my_map = folium.Map(location=rioLatLon, zoom_start=15)
+    folium.Marker(location=[40.685790, -74.162510], popup="Port Newark Container Terminal", tooltip="Port Newark Container Terminal").add_to(my_map)
+    folium.Marker(location=rioLatLon, popup="Porto do Rio de Janiero", tooltip="Porto do Rio de Janiero").add_to(my_map)
+    folium.Marker(location=[38.701191, -9.165530], popup="Port of Lisbon", tooltip="Port of Lisbon").add_to(my_map)
+    st_data = st_folium(my_map, width=700)
+elif location == "Lisbon, Portugal":
+    lisbonLatLon = [38.701191, -9.165530]
+    my_map = folium.Map(location=lisbonLatLon, zoom_start=15)
+    folium.Marker(location=[40.685790, -74.162510], popup="Port Newark Container Terminal", tooltip="Port Newark Container Terminal").add_to(my_map)
+    folium.Marker(location=[-22.898360, -43.180960], popup="Porto do Rio de Janiero", tooltip="Porto do Rio de Janiero").add_to(my_map)
+    folium.Marker(location=lisbonLatLon, popup="Port of Lisbon", tooltip="Port of Lisbon").add_to(my_map)
+    st_data = st_folium(my_map, width=700)
 
 startDate = st.date_input('Enter a starting date')
 
 endDate = st.date_input('Enter an ending date')
 
-# st.button('Hit me')
-# st.checkbox('Check me out')
-# st.radio('Pick one:', ['nose','ear'])
-# st.selectbox('Select', [1,2,3])
-# st.multiselect('Multiselect', [1,2,3])
-# st.slider('Slide me', min_value=0, max_value=10)
-# st.select_slider('Slide to select', options=[1,'2'])
-# st.text_input('Enter some text')
-# st.number_input('Enter a number')
-# st.text_area('Area for textual entry')
-# st.date_input('Date input')
-# st.time_input('Time entry')
-# st.file_uploader('File uploader')
-# st.color_picker('Pick a color')
+# SeaWorldle:
+# st.header("SeaworldLe")
+# st.write('https://github.com/gorbe2002/HackNJIT2023/blob/main/seaWorldLe.php', unsafe_allow_html=True)
