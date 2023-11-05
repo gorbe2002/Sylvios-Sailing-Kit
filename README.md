@@ -1,13 +1,26 @@
 <body background-color: white>
 <h1> Sylvio's Sailing Kit ⚓ 🔱⛵🚢 🌧</h1>
 
-<h2> Project Inspiration</h2>
-<p> When coming to this project idea, we thought about all of the things a wandering sailor may need. This includes direction and leisure, we wanted to integrate utility, fun, and design </p>
+## Inspiration
+We were inspired by the idea of a modern lonely sailor. We thought to ourselves "What would this sailor need to fulfill his navigation needs and thirst for a word puzzle."
 
+## What it does
+Our project gathers real-time weather data to map out the most optimal path to get from one port to another.
 
-<h2> ❔ What Is Our Project? 🌧 </h2>
-<p> Using OpenWeatherMap's API we created a nautically inspired wordle concentrated with a nautical travel utility</p>
+## How we built it
+The wordle-inspired "seaWorldLE" was built using PHP, CSS, a word bank, and HTML to blend the backend and front-end problems faced when making a game like Wordle.
 
+## Challenges we ran into
+We ran into data collection issues at the start that made us rethink how we went about our project, additionally, in the mini-game seaWorldLE, we ran into issues with hosting a PHP website. 
+
+## Accomplishments that we're proud of
+We're proud of the way we were able to recover from harsh setbacks in the beginning and rethink how we went about collecting our data to re-engineer our initial idea which was image classification of shark species as well as a predictive model that used data from buoy centers.
+
+## What we learned
+Functionally we learned how to constantly reinvigorate our imaginations when faced with two major setbacks. On the more technical side, we learned a lot more about StreamLit, Python, and PHP as well as general web hosting. 
+
+## What's Next for Sylvio's Sailing Kit
+We want Sylvios's Sailing Kit to have increased utility with the addition of "tools" that would provide utility via computer vision, machine learning, time series analysis, etc. 
 
 <h2> 🖥️ Technologies Used 🖥️ </h2>
 
