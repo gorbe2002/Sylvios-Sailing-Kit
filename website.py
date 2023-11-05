@@ -3,12 +3,20 @@ import requests
 import streamlit as st
 from streamlit_folium import st_folium
 
-# title:
+# function to use OpenWeatherMap API:
+def get_weather_data(city):
+    BASE_URL = "https://api.openweathermap.org/data/2.5/weather?"
+    API_KEY = open("key", 'r').read()
+    url = BASE_URL + "&appid=" + API_KEY + "&q=" + city
+    response = requests.get(url).json()
+    return response
+
+# title of website:
 st.title("Welcome to Sylvester Smart Sailing!")
 st.divider()
 location = st.selectbox('Select a port in one of the following locations', ["Newark, USA", "Rio de Janiero, Brazil", "Lisbon, Portugal"])
 
-# change map depending on the location chosen
+# change map depending on the location chosen:
 if location == "Newark, USA":
     newarkLatLon = [40.685790, -74.162510]
     my_map = folium.Map(location=newarkLatLon, zoom_start=13)
@@ -31,9 +39,27 @@ elif location == "Lisbon, Portugal":
     folium.Marker(location=lisbonLatLon, popup="Port of Lisbon", tooltip="Port of Lisbon").add_to(my_map)
     st_data = st_folium(my_map, width=700)
 
-startDate = st.date_input('Enter a starting date')
+# get weather data based on the selected location:
+locationMapping = {
+    "Newark, USA": "Newark", 
+    "Rio de Janiero, Brazil": "Rio",
+    "Lisbon, Portugal": "Lisbon"
+}
+selected_city = locationMapping[location]
+weather_data = get_weather_data(selected_city)
 
-endDate = st.date_input('Enter an ending date')
+# extract weather data:
+tempKelvin = weather_data['main']['temp']
+tempFahrenheit = ((tempKelvin - 273.15) * 9/5 + 32)
+windSpeed = weather_data['wind']['speed']
+description = weather_data['weather'][0]['description']
+
+# display weather data:
+st.title(f"Relevant weather data in {location}:")
+st.divider()
+st.write(f"\tTemperature: {tempFahrenheit:.2f}°F")
+st.write(f"\tWind speed: {windSpeed} m/s")
+st.write(f"\tWeather description: {description}")
 
 # SeaWorldle:
 # st.header("SeaworldLe")
