@@ -3,7 +3,7 @@
 
 
 <img href = "HACKNJIT23.png">
-![Alt Image](https://github.com/gorbe2002/Sylvios-Sailing-Kit/blob/main/HACKNJIT23.png)
+![Alt txt](https://github.com/gorbe2002/Sylvios-Sailing-Kit/blob/main/HACKNJIT23.png)
 
 ## 📜 Table of Contents
 - [❓ What We're Proud Of](https://github.com/gorbe2002/Sylvios-Sailing-Kit#accomplishments-that-were-proud-of)
