@@ -11,7 +11,7 @@
 
 
 <h2 id = 'whatIsOurProject' >❔ What Is Our Project? </h2>
-<p> A nautically inspired wordle concentrated with a nautical travel utility</p>
+<h4><p> A nautically inspired wordle concentrated with a nautical travel utility</p></h4>
 
 
 ##2
