@@ -1,7 +1,9 @@
 <body background-color: white>
 <h1> Sylvio's Sailing Kit ⚓ 🔱⛵🚢 🌧</h1>
 
-
+<p align="center">
+  <img src="https://github.com/gorbe2002/Sylvios-Sailing-Kit/blob/main/HACKNJIT23.png" />
+</p>
 
 ## 📜 Table of Contents
 - [❓ What We're Proud Of](https://github.com/gorbe2002/Sylvios-Sailing-Kit#accomplishments-that-were-proud-of)
