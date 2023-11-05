@@ -30,6 +30,7 @@ def haversine_distance(lat1, lon1, lat2, lon2):
 
 # title of website:
 st.title("Welcome to Sylvio's Sailing Kit!")
+st.write("Explore the high seas with Sylvio, your intelligent sailing companion.")
 st.divider()
 start_location = st.selectbox('Select a starting port in one of the following locations', ["Newark, USA", "Paramaribo, Suriname", "Lisbon, Portugal", "Algeciras, Spain"])
 
@@ -140,6 +141,9 @@ if (start_location == "Algeciras, Spain" or end_location == "Algeciras, Spain"):
     folium.Marker(location=algecirasLatLon, popup="Port of Algeciras", tooltip="Port of Algeciras").add_to(route_map)
 st_data = st_folium(route_map, width=700)
 st.divider()
+
+if st.button("Play SeaWorldLe Game"):
+    st.markdown("[Play SeaWorldLe](https://seaworldle.000webhostapp.com/Index.php)")
 
 # display weather data:
 st.title(f"Weather data in {start_location}:")
