@@ -3,7 +3,7 @@
 session_start();
 
 function introduction() {
-    echo "<p>Ahoy Welcome to SeaWorldLE, Enter your 5 letter guess</p>";
+    echo "<p>Ahoy Mateys! Welcome to SeaWorldLE, enter a 5 letter sea-inspired word</p>";
 }
 
 function randomWord() {
@@ -76,7 +76,7 @@ if (isset($_POST['guess'])) {
     }
 
     if ($won) {
-        echo "<p>ARR MATIE YOU WON</p>";
+        echo "<p>ARR MATIE, YOU WON!!!!</p>";
     } else if ($guesses >= 6) {
         echo "<p> Sooo close, the word was " . $wordle . "</p>";
     }
