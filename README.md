@@ -5,14 +5,11 @@
 <img href = "HACKNJIT23.png">
 
 ## 📜 Table of Contents
-- [HackNJIT23 Members](https://github.com/gorbe2002/Sylvios-Sailing-Kit#--team-members-)
-- [❓ What We're Proud Od](https://github.com/gorbe2002/Sylvios-Sailing-Kit#accomplishments-that-were-proud-of)
-- [Challenges Faced](https://github.com/gorbe2002/Sylvios-Sailing-Kit#challenges-we-ran-into)
+- [❓ What We're Proud Of](https://github.com/gorbe2002/Sylvios-Sailing-Kit#accomplishments-that-were-proud-of)
+- [Challenges Faced😕](https://github.com/gorbe2002/Sylvios-Sailing-Kit#challenges-we-ran-into)
 - [💻 Technology Used](https://github.com/gorbe2002/Sylvios-Sailing-Kit#-%EF%B8%8F-technologies-used-%EF%B8%8F-)
-- [🎯 What/s Next for Sylvio's Sailing Kit?](https://github.com/gorbe2002/Sylvios-Sailing-Kit#whats-next-for-sylvios-sailing-kit---)
-
-
-
+- [🎯 What's Next for Sylvio's Sailing Kit?](https://github.com/gorbe2002/Sylvios-Sailing-Kit#whats-next-for-sylvios-sailing-kit---)
+- [HackNJIT23 Members](https://github.com/gorbe2002/Sylvios-Sailing-Kit#--team-members-)
 
 ## Inspiration 🧜‍♀️
 We were inspired by the idea of a modern lonely sailor. We thought to ourselves "What would this sailor need to fulfill his navigation needs and thirst for a word puzzle."
@@ -46,7 +43,6 @@ We want Sylvios's Sailing Kit to have increased utility with the addition of "to
   <li>HTML</li>
   <li>Folium</li>
   <li>Wordle Website (inspiration)</li>
-  
 </ul>
 <h2>  Team Members </h2>
 <ul>
