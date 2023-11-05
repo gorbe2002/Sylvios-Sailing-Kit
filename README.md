@@ -31,6 +31,7 @@ We want Sylvios's Sailing Kit to have increased utility with the addition of "to
   <li>Python</li>
   <li>CSS</li>
   <li>HTML</li>
+  <li>Folium</li>
   
 </ul>
 <h2>  Team Members </h2>
