@@ -9,7 +9,7 @@
 - [Inspiration 🧜‍♀️](https://github.com/gorbe2002/Sylvios-Sailing-Kit#inspiration-%EF%B8%8F)
 - [What it does 🚢 🌧](https://github.com/gorbe2002/Sylvios-Sailing-Kit#what-it-does--)
 - [How we built it ❓](https://github.com/gorbe2002/Sylvios-Sailing-Kit#how-we-built-it-)
-- [Challenges we ran into 😕](https://github.com/gorbe2002/Sylvios-Sailing-Kit#challenges-we-ran-into)
+- [Challenges we ran into 😕](https://github.com/gorbe2002/Sylvios-Sailing-Kit#challenges-we-ran-into-)
 - [Accomplishments that we're proud of 😁](https://github.com/gorbe2002/Sylvios-Sailing-Kit#accomplishments-that-were-proud-of)
 - [What we learned 🧠](https://github.com/gorbe2002/Sylvios-Sailing-Kit#what-we-learned)
 - [What's Next for Sylvio's Sailing Kit 🎯](https://github.com/gorbe2002/Sylvios-Sailing-Kit#whats-next-for-sylvios-sailing-kit---)
