@@ -123,8 +123,8 @@ distance = haversine_distance(start_lat, start_lon, end_lat, end_lon)
 st.subheader(f"Distance between {start_location} and {end_location} is {distance:.2f} km")
 st.divider()
 
-# adding destination map with line between both points
-st.title("Destination map:")
+# adding destination map with route between both destinations
+st.title("Destination route:")
 route_coordinates = [(start_lat, start_lon), (end_lat, end_lon)]
 route_map = folium.Map(location=[start_lat, start_lon], zoom_start=4)
 route_line = folium.PolyLine(smooth_factor=50, locations=route_coordinates, color='blue', weight=5, opacity=1, tooltip=f"From {start_location} to {end_location}")
@@ -142,9 +142,6 @@ if (start_location == "Algeciras, Spain" or end_location == "Algeciras, Spain"):
 st_data = st_folium(route_map, width=700)
 st.divider()
 
-if st.button("Play SeaWorldLe Game"):
-    st.markdown("[Play SeaWorldLe](https://seaworldle.000webhostapp.com/Index.php)")
-
 # display weather data:
 st.title(f"Weather data in {start_location}:")
 st.write(f"Temperature: {tempFahrenheit:.2f}°F")
@@ -152,6 +149,10 @@ st.write(f"Temperature feels like: {tempFeelsLikeFahrenheit:.2f}°F")
 st.write(f"Humidity: {humidity}%")
 st.write(f"Wind speed: {windSpeed} m/s")
 st.write(f"Weather description: {description}")
+st.divider()
+
+st.title("Sylvio's Arcade:")
+st.markdown("[Play SeaWorldLe, Sylvio's nautical-themed Wordle Game](https://seaworldle.000webhostapp.com/Index.php)")
 
 # SeaWorldle:
 # st.header("SeaworldLe")
