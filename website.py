@@ -82,6 +82,7 @@ elif start_location == "Algeciras, Spain":
 # ending location
 end_location = st.selectbox('Select an ending port in one of the following locations', ["Newark, USA", "Rio de Janiero, Brazil", "Lisbon, Portugal", "Algeciras, Spain"])
 
+# getting latitude and longitude of end coordinates
 if end_location == "Newark, USA":
     end_lat, end_lon = newarkLatLon[0], newarkLatLon[1]
 elif end_location == "Rio de Janiero, Brazil":
@@ -114,6 +115,12 @@ description = weather_data['weather'][0]['description']
 distance = haversine_distance(start_lat, start_lon, end_lat, end_lon)
 st.subheader(f"Distance between {start_location} and {end_location} is {distance:.2f} km")
 st.divider()
+
+# highlight route on map
+if start_lat and start_lon and end_lat and end_lon:
+    route_coordinates = [(start_lat, start_lon), (end_lat, end_lon)]
+    route_line = folium.PolyLine(locations=route_coordinates, color='blue', weight=5, opacity=1)
+    route_line.add_to(my_map)
 
 # display weather data:
 st.title(f"Relevant weather data in {start_location}:")
