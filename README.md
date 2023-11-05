@@ -1,5 +1,5 @@
 # HackNJIT2023
-<h1> Sylvio's Sailing Kit  </h1>
+<h1> Sylvio's Sailing Kit </h1>
 
 
 <h2>📜 Table of Contents </h2>
@@ -9,10 +9,16 @@
   
 </ol>
 
-
 <h2 id = 'whatIsOurProject' >❔ What Is Our Project? </h2>
-<h4><p> A nautically inspired wordle concentrated with a nautical travel utility</p></h4>
+<h4><p> A nautically inspired wordle concentrated with a nautical travel utility</p></h4
 
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 
 <h2 id = 'technologes' > 🖥️ Technologies Used </h2>
 
