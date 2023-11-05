@@ -1,0 +1,44 @@
+span{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size:100;
+
+}
+
+p{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size:50;
+    color:aliceblue;
+
+}
+
+body{
+    background-color: cadetblue;
+}
+
+
+input[type="text"] {
+    width: 200px;
+    height: 40px;
+    font-size: 20px;
+    
+}
+input[type="submit"] {
+    width: 100px;
+    height: 40px;
+    font-size: 20px;
+}
+
+.rightCloud{
+    float: right;
+    padding:0%;
+}
+
+.leftCloud{
+    float:left;
+    padding:0%;
+
+}
+
+.waves{
+
+}

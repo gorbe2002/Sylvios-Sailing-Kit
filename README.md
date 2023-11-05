@@ -1,5 +1,5 @@
 # HackNJIT2023
-<h1> 🦈 Shark Recognition 👀  </h1>
+<h1> Sylvio's Sailing Kit  </h1>
 
 
 <h2>📜 Table of Contents </h2>
@@ -17,8 +17,8 @@
 <h2> 🖥️ Technologies Used </h2>
 
 <ul>
-  <li>TensorFlow</li>
-  <li>Keras</li>
+  <li>StreamLit</li>
+  <li>Ph  </li>
   <li>MatPlotLib</li>
   <li> <a href = 'https://www.kaggle.com/datasets/larusso94/shark-species'>Kaggle Shark Database </a></li>
 </ul>
