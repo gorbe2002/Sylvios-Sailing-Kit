@@ -1,5 +1,5 @@
 # HackNJIT2023
-<h1> 🦈 Shark Recognition 👀  </h1>
+<h1> Sylvio's Sailing Kit  </h1>
 
 
 <h2>📜 Table of Contents </h2>
