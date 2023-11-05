@@ -16,7 +16,7 @@
   <li>HTML</li>
   
 </ul>
-<h1>  Team Members </h1>
+<h2>  Team Members </h2>
 <ul>
   <li> Gabriel Orbe </li>
   <li> Angel Cazares</li>
