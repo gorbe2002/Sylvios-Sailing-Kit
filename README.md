@@ -2,6 +2,8 @@
 <h1> Sylvio's Sailing Kit ⚓ 🔱⛵🚢 🌧</h1>
 
 
+ [Sylvio](HACKNJIT23.png)
+
 
 ## 📜 Table of Contents
 - [HackNJIT23 Members](https://github.com/gorbe2002/Sylvios-Sailing-Kit#--team-members-)
