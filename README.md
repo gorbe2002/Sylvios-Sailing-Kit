@@ -1,24 +1,24 @@
 # HackNJIT2023
-<h1> Sylvio's Sailing Kit  </h1>
+<h1> Sylvio's Sailing Kit ⚓ 🔱⛵🚢 🌧</h1>
 
 
-<h2>📜 Table of Contents </h2>
-<ol>
-  <li>   </li>
-
-</ol>
+<h2> ❔ What Is Our Project? 🌧 </h2>
+<p> Using OpenWeatherMap's API we created a nautically inspired wordle concentrated with a nautical travel utility</p>
 
 
-<h2>❔ What Is Our Project? </h2>
-<p> Our shark recognition model transforms photos of varying species of sharks and identifies them based on trained differences</p>
-
-
-
-<h2> 🖥️ Technologies Used </h2>
+<h2> 🖥️ Technologies Used 🖥️ </h2>
 
 <ul>
-  <li>StreamLit</li>
-  <li>Ph  </li>
-  <li>MatPlotLib</li>
-  <li> <a href = 'https://www.kaggle.com/datasets/larusso94/shark-species'>Kaggle Shark Database </a></li>
+  <li> StreamLit</li>
+  <li> OpenWeatherMap's API</li>
+  <li>PHP</li>
+  <li>CSS</li>
+  <li>HTML</li>
+  
+</ul>
+<h2>  Team Members </h2>
+<ul>
+  <li> Gabriel Orbe </li>
+  <li> Angel Cazares</li>
+
 </ul>
