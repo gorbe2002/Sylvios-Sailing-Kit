@@ -4,7 +4,7 @@
 ## Inspiration
 We were inspired by the idea of a modern lonely sailor. We thought to ourselves "What would this sailor need to fulfill his navigation needs and thirst for a word puzzle."
 
-## What it does
+## What it does🚢 🌧
 Our project gathers real-time weather data to map out the most optimal path to get from one port to another.
 
 ## How we built it
