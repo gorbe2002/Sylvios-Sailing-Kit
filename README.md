@@ -2,23 +2,22 @@
 <h1> Sylvio's Sailing Kit  </h1>
 
 
-<h2>📜 Table of Contents </h2>
+<h2 >📜 Table of Contents </h2>
 <ol>
-  <li>   </li>
+  <li> <a href = "#whatIsOurProject"> What is Our Project? </a>  </li>
+  <li> <a href = "#technologies"> What is Our Project? </a>  </li>
+  
 
 </ol>
 
 
-<h2>❔ What Is Our Project? </h2>
+<h2 id = 'whatIsOurProject' >❔ What Is Our Project? </h2>
 <p> Our shark recognition model transforms photos of varying species of sharks and identifies them based on trained differences</p>
 
 
-
-<h2> 🖥️ Technologies Used </h2>
+##2
+<h2 id = 'technologes' > 🖥️ Technologies Used </h2>
 
 <ul>
-  <li>StreamLit</li>
-  <li>Ph  </li>
-  <li>MatPlotLib</li>
-  <li> <a href = 'https://www.kaggle.com/datasets/larusso94/shark-species'>Kaggle Shark Database </a></li>
+  <li>  </li>
 </ul>
