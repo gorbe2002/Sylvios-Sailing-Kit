@@ -1,3 +1,4 @@
+<body background-color: white>
 <h1> Sylvio's Sailing Kit ⚓ 🔱⛵🚢 🌧</h1>
 
 
@@ -22,3 +23,5 @@
   <li> Angel Cazares</li>
 
 </ul>
+
+</body>
